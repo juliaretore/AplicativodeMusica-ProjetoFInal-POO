@@ -1,0 +1,67 @@
+create sequence id_artista;
+create table artista(
+	id int,
+	nome varchar(50),
+	primary key (id)
+);
+
+create sequence id_musica;
+create table musica(
+	id int,
+	nome varchar(50),
+	album varchar(50),
+	estilo varchar(50),
+	nomearq text,
+	arq bytea,
+	primary key (id)
+);
+
+create sequence id_artistas_musica;
+create table artistas_musica(
+	id int,
+	id_musica int,
+	id_artista int,
+	primary key (id),
+	foreign key (id_musica) references musica,
+	foreign key (id_artista) references artista
+);
+
+create sequence id_usuario;
+create table usuario(
+	id int,
+	nome varchar(50),
+	login varchar(50),
+	senha varchar(50),
+	cargo varchar(50),
+	primary key (id)
+);
+
+create sequence id_playlist;
+create table playlist(
+	id int,
+	nome varchar(50),
+	id_usuario int,
+	primary key (id),
+	foreign key (id_usuario) references usuario
+);
+
+create sequence id_musicas_playlist;
+create table musicas_playlist(
+	id int,
+	id_musica int,
+	id_playlist int,
+	primary key (id),
+	foreign key (id_musica) references musica,
+	foreign key (id_playlist) references playlist
+);
+
+create sequence id_musicas_favoritas;
+create table musicas_favoritas(
+	id int,
+	id_musica int,
+	id_usuario int,
+	primary key (id),
+	foreign key (id_usuario) references usuario,
+	foreign key (id_musica) references musica
+);
+
