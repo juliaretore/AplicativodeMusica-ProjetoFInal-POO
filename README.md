@@ -25,5 +25,4 @@ Esse é um aplicativo de música feito em java como projeto final da matéria de
 ## Instruções de uso
 Para executar o programa, é necessário ter um banco de dados Postgresql instalado na máquina. Crie um banco de dados com nome 'app-musica' e execute o sql disponível no arquivo chamado 'banco.txt'. Após criado o banco de dados, o programa poderá ser usado.
 
-## Breve 
-Preview:
+## Breve Preview:
