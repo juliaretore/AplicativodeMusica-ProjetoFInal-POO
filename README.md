@@ -1,6 +1,6 @@
 # AplicativodeMusica-ProjetoFinal-POO
 
-Esse é um aplicativo de música feito em java como projeto final da matéria de POO-0001 do curso de Bacharelado em Ciências da Computação da UDESC CCT. O objetivo do trabalho é criar um aplicativo de música com interface gráfica e conexão ao banco de dados, feito em Java. O trabalho possui dois posspiveis usuários, o adiministrador e o ouvente. Para cada tipo de usuário, os requisitos são:
+Esse é um aplicativo de música feito em java como projeto final da matéria de POO-0001 do curso de Bacharelado em Ciências da Computação da UDESC CCT. O objetivo do trabalho é criar um aplicativo de música com interface gráfica e conexão ao banco de dados, feito em Java. O trabalho possui dois possíveis usuários, o adiministrador e o ouvinte. Para cada tipo de usuário, os requisitos são:
 
 - Permitir que o usuário adiminstrador faça inserção, remoção, alteração e busca de usuários;
 
